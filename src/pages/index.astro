@@ -1,4 +1,6 @@
 ---
+import Footer from '../components/Footer.astro'
+import Navigation from '../components/Navigation.astro'
 import '../styles/globals.css'
 const pageTitle: string = "Página de inicio de inicio"
 
@@ -13,12 +15,11 @@ const pageTitle: string = "Página de inicio de inicio"
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Inicio</a>
-		<a href="/about">Sobre mi</a>
-		<a href="/blog">Blog</a>
+		<Navigation />
 
 
 
 		<h1>{pageTitle}</h1>
+		<Footer />
 	</body>
 </html>

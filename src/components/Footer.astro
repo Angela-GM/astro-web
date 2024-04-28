@@ -1,0 +1,24 @@
+---
+import Social from "./Social.astro";
+
+const platform = "github";
+const username = "Angela-GM";
+---
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+
+<footer>
+  <p>¡Más información sobre mis proyectos en <a href={`https://www.${platform}.com/${username}`} target="_blank">{platform}</a>!</p>
+  <Social platform="twitter" username="Angela-GM" />
+  <Social platform="github" username="Angela-GM" />
+  <Social platform="youtube" username="undefined" />
+  <Social platform="instagram" username="Angela-GM" />
+
+
+
+</footer>
